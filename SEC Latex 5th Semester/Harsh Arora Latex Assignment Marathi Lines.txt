@@ -1,0 +1,34 @@
+\documentclass[10pt]{article} 
+\usepackage{fontspec} 
+\author{Harsh Arora \\{AE-1218}} 
+\title{Marathi Lines} 
+
+\newcommand\dn{\catcode`\~=11 
+ \fontspec[Script=Devanagari, 
+ Mapping=velthuis-sanskrit]{Nakula}} 
+
+\begin{document} 
+{\maketitle 
+
+\dn{\vspace{1cm} 
+ 
+nehamii aana.mdii raaha.nyaacaa prayata karaa\\
+tuu damalelaa aahesa kaa\\
+tuumhaalaa taapa aahe kaa\\
+
+mahaaraa.s.tra he bhaarataatiila pramukha raajyaa.mpaikii eka aahe \\
+tyaacii sthaapanaa 1 me 1960 rojii jhaalii \\
+mahaaraa.s.traata daravar.sii 1 me rojii mahaaraa.s.tra dina aa.ni kaamagaara dina saajaraa kelaa jaato \\
+bhaarataatiila itara raajyaa.mmadhaye mahaaraa.s.tra he sarvaata "sriima.mta raajya aahe\\
+mahaaraa.s.traacii raajadhaanii mu.mbaI aahe\\
+mahaaraa.s.traacii adhik.rta bhaa.saa maraa.thii aahe\\
+mahaaraa.s.traata ekuu.na 35 jilhe aaheta\\
+mu.mbaI, pu.ne, naa"sika, naagapuura,  aa.ni solaapuura  hii mahaaraa.s.traatiila pramukha "sahare aaheta\\
+mu.mbaIlaa de"saacii aarthika raajadhaanii mha.nuunahii oLakhale jaate\\
+mahaaraa.s.traacaa  raajya praa.nii eka mahaakaaya gilaharii aahe
+
+
+
+ } 
+}
+\end{document}

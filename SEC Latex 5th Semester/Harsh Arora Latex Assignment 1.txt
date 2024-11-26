@@ -1,0 +1,54 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\begin{document}
+
+% Your information
+\noindent
+Harsh Arora \\
+AE-1218 \\
+B.Sc.(Hons) Computer Science, 3rd Year \\
+Acharya Narendra Dev College \\[0.5cm]
+\textbf{Date:} September 4, 2024 \\[0.5cm]
+
+% Recipient information
+\noindent
+\textbf{To} \\
+The Principal, \\
+Acharya Narendra Dev College,\\
+Govindpuri, Kalkaji,\\
+New Delhi, Delhi-19 \\
+
+\vspace{0.5cm}
+
+\noindent
+\textbf{Subject:} Request for Leave of Absence for Two Months \\
+
+\vspace{0.5cm}
+
+% Salutation
+\noindent
+Respected Sir, 
+
+% Body of the letter
+I am writing to formally request a leave of absence from college for a duration of two months, from 10th September 2024 to 10th November 2024, due to some family reasons.I assure you that this leave is essential, and I will make every effort to ensure that I complete any missed coursework or assignments during this period.
+
+I kindly request your approval for this leave and any guidance regarding formalities or procedures to be completed in this regard. Please let me know if further documentation is required.
+
+Thank you for your understanding and support.
+
+
+\vspace{1cm}
+
+% Closing
+\noindent
+Yours sincerely, \\
+
+% Signature
+\noindent
+Harsh Arora \\
+AE-1218\\
+5th Semester
+\end{document}

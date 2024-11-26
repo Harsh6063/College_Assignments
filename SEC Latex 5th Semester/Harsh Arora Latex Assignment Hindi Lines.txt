@@ -1,0 +1,40 @@
+\documentclass[10pt]{article} 
+\usepackage{fontspec} 
+\author{Harsh Arora \\{AE-1218}} 
+\title{Hindi Lines} 
+
+\newcommand\dn{\catcode`\~=11 
+ \fontspec[Script=Devanagari, 
+ Mapping=velthuis-sanskrit]{Nakula}} 
+
+\begin{document} 
+{\maketitle 
+
+\dn{\vspace{1cm} 
+
+meraa naama har.sa hai|\\
+
+mai pa.tanaa kaa nivaasi hu| \\
+
+pa.tanaa bhaarata kaa eka raajya hai|\\
+
+bhaarata me.m 29 raajya hai| \\
+
+bhaarata ko hi.mdustaana  ke naama se bhii jaanaa jaataa hai | \\
+
+bhaarata kii raajadhaanii dillii hai |\\
+
+bhaarata me.m caara dhaama sabase prasidah hai | \\
+
+bhaarata ghuumane ke lihaaza se sabase prasidah hai | \\
+
+15 agasta 1947 ko bhaarata ko aajaadii milii thii | \\
+
+bhaarata ke pahale pradhaanama.mtrii javaaharalaala neharuu the | \\
+
+bhaarata ke loga gaane aura philma ke bahuta divaane hai | \\
+
+bhaarata me.m 28 raajya hai |
+ } 
+}
+\end{document}

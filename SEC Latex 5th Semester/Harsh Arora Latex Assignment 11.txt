@@ -1,0 +1,117 @@
+\documentclass[12pt]{book}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, % Color links instead of boxed ones
+    linkcolor=black, % Set link color to black
+    urlcolor=black,  % Set URL color to black
+    citecolor=black  % Set citation color to black
+}
+\usepackage{graphicx}
+
+
+\title{Harry Potter: The Complete Series}
+\author{J.K. Rowling\\Harsh Arora\\AE-1218\\Bsc(Hons) CS}
+\date{First Published: 1997}
+
+\begin{document}
+
+% Remove the empty page before preface
+\maketitle
+\chapter*{Preface}
+This book follows the life and adventures of Harry Potter, a young wizard. Along with his friends, Harry faces challenges and uncovers mysteries at the Hogwarts School of Witchcraft and Wizardry.
+
+\tableofcontents
+
+\chapter{Harry Potter and the Philosopher's Stone}
+
+\section{Chapter 1: The Boy Who Lived}
+Harry discovers he's not an ordinary boy but a wizard destined for greatness. The wizarding world is revealed to him on his 11th birthday when he receives his letter from Hogwarts.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[height=0.35\textheight]{The Boy Who Lived.jpg} 
+    \caption{Harry Potter's First Chapter: The Boy Who Lived}
+\end{figure}
+\newpage
+\section{Chapter 2: The Vanishing Glass}
+Harry lives with the Dursleys, who treat him poorly. He accidentally makes the glass of a zoo enclosure vanish, marking the start of his magical journey.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[height=0.4\textheight]{The vanishing Glass.jpg} 
+    \caption{Harry Potter's Second Chapter: The vanishing Glass}
+\end{figure}
+
+\section{Chapter 3: The Letters from No One}
+Harry receives a series of letters, all addressed to him in a mysterious way. The Dursleys try to stop him from reading them, but they are unstoppable.Vernon nails the letter box shut but the letters keep arriving in other ways. Twelve letters are put through the side of the doors and windows, twenty four are put in two dozen egg deliveries, thirty or forty through the chimney, and letters continue to follow them to the Hut-on-the-Rock. At midnight on Harry's eleventh birthday, Rubeus Hagrid knocks down the door of the Hut.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[height=0.3\textheight]{Letters.jpg} 
+    \caption{Harry Potter's Third Chapter: The Letters From No One}
+\end{figure}
+\newpage
+
+\section{Chapter 4: The Keeper of the Keys}
+Hagrid arrives to deliver Harry’s acceptance letter to Hogwarts. He also reveals the truth about Harry’s parents and their magical heritage.
+
+\section{Chapter 5: Diagon Alley}
+Harry visits Diagon Alley for the first time. He is amazed by the magical shops and the treasures they hold, including his wand and school supplies.
+
+\section{Chapter 6: The Journey from Platform Nine and Three-Quarters}
+Harry boards the Hogwarts Express for the first time. He meets Ron Weasley and Hermione Granger, who become his lifelong friends.
+
+\section{Chapter 7: The Sorting Hat}
+Harry is sorted into Gryffindor House. The Sorting Hat chooses his destiny, and Harry begins to learn about his place at Hogwarts.
+
+\section{Chapter 8: The Potions Master}
+Harry meets Professor Snape, the Potions Master, who seems to dislike him. His lessons are challenging, but Harry is eager to learn more about magic.
+
+\section{Chapter 9: The Midnight Duel}
+Harry and Draco Malfoy have a duel at midnight. Their rivalry grows as they face off in the dark corridors of Hogwarts.
+
+\section{Chapter 10: Halloween}
+A mysterious creature lurks in the school on Halloween. Harry, Ron, and Hermione face their first major challenge together.
+
+\section{Chapter 11: Quidditch}
+Harry tries out for the Gryffindor Quidditch team and becomes the youngest Seeker in over a century. He proves his worth with his flying skills.
+
+\section{Chapter 12: The Mirror of Erised}
+Harry finds the Mirror of Erised, which shows him his deepest desires. The mirror reveals Harry’s longing for his deceased parents.
+
+\section{Chapter 13: Nicolas Flamel}
+Harry, Ron, and Hermione uncover the secret of the Philosopher's Stone. They learn about its creator, Nicolas Flamel, and its magical powers.
+
+\section{Chapter 14: Norbert the Norwegian Ridgeback}
+Hagrid wins a dragon egg in a card game. Harry and Hermione help him care for the dragon, Norbert, until they are forced to send him away.
+
+\section{Chapter 15: The Forbidden Forest}
+Harry and Draco Malfoy are caught and sent to the Forbidden Forest. They encounter a creature that leaves them both terrified.
+
+\section{Chapter 16: Through the Trapdoor}
+The trio discovers the way to protect the Philosopher’s Stone. They face challenges that test their courage and wit.
+
+\section{Chapter 17: The Man with Two Faces}
+Harry faces Professor Quirrell, who reveals himself as a servant of Lord Voldemort. Harry stops Voldemort from obtaining the Philosopher's Stone.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[height=0.3\textheight]{Man With Two Faces.jpg} 
+    \caption{Harry Potter's Last Chapter: The Man With Two Faces}
+\end{figure}
+
+\chapter{Harry Potter and the Chamber of Secrets}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[height=0.3\textheight]{Chamber.jpg} 
+    \caption{Harry Potter's Second Part: Chamber of Secrets}
+\end{figure}
+\section{Chapter 1: The Worst Birthday}
+Harry’s second year at Hogwarts begins, but it starts off poorly. He’s stuck with the Dursleys and wishes to return to Hogwarts immediately.
+
+
+\section{Chapter 2: Dobby's Warning}
+Harry meets Dobby, a house-elf who warns him about the dangers of returning to Hogwarts. Dobby’s interference only deepens the mystery of the Chamber of Secrets.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[height=0.5\textheight]{Dobby.jpg} 
+    \caption{Harry Potter's Second Chapter: Dobby}
+\end{figure}
+
+\end{document}

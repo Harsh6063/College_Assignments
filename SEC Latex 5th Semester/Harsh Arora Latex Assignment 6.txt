@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{paralist}    % Provides in-line and compact lists (inparaenum, compactenum)
+\usepackage{csquotes}    % For quotation handling
+
+\title{An Article with Various List Styles}
+\author{Harsh Arora}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+In this article, we showcase various types of lists in \LaTeX, including numbered and bulleted lists, inline enumerations, compact lists, and methods to incorporate quotations effectively.
+
+\section{List Types}
+
+\subsection{Enumerating}
+
+Below is an example of a numbered list using the `enumerate` environment:
+
+\begin{enumerate}
+    \item The first item demonstrates the beginning of a numbered list.
+    \item The second item provides continuity in the sequence.
+    \item The third item concludes this example.
+\end{enumerate}
+
+\subsection{Itemizing}
+
+Here’s an unordered list created using the `itemize` environment:
+
+\begin{itemize}
+    \item This is the first bullet point, introducing the list.
+    \item The second point continues the explanation.
+    \item The third point completes this unordered example.
+\end{itemize}
+
+\subsection{Inline Enumeration with \texttt{inparaenum}}
+
+The \texttt{inparaenum} environment from the \texttt{paralist} package enables creating enumerated lists within a single paragraph:
+
+\begin{inparaenum}[(1)]
+    \item This is the initial inline item,
+    \item followed by the next, and
+    \item concluding with the last item.
+\end{inparaenum}
+
+\subsection{Compact Enumeration with \texttt{compactenum}}
+
+To save space, you can use the \texttt{compactenum} environment from the \texttt{paralist} package for creating compact enumerated lists:
+
+\begin{compactenum}
+    \item Compact lists are concise.
+    \item They avoid unnecessary spacing.
+    \item This example illustrates their usage.
+\end{compactenum}
+
+\subsection{Quotes and Quotations}
+
+The \texttt{quote} environment is perfect for simple quotations:
+
+\begin{quote}
+    “Innovation distinguishes between a leader and a follower.” – Steve Jobs
+\end{quote}
+
+For more structured block quotations, the \texttt{csquotes} package is highly recommended:
+
+\begin{displayquote}
+    “In the middle of every difficulty lies opportunity.” – Albert Einstein
+\end{displayquote}
+
+\section{Conclusion}
+
+This article provided an overview of how to create different styles of lists in \LaTeX, including numbered, bulleted, inline, and compact lists, along with techniques for adding quotations using packages like \texttt{paralist} and \texttt{csquotes}.
+\end{document}

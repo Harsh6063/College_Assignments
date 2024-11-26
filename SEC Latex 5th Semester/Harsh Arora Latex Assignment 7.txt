@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}  % for special mathematical symbols
+\usepackage{amssymb}  % for additional math symbols
+
+\title{Elementary Mathematics}
+\author{Harsh Arora\\AE-1218\\Department of Computer Science\\Acharya Narendra Dev College\\University of Delhi}
+\date{September 26, 2024}
+
+\begin{document}
+
+\maketitle
+
+\section*{}
+
+1. \( a \pm b \) \\
+2. \( a \mp b \) \\
+3. \( a \times b \) \\
+4. \( a \div b \) \\
+5. \( a \ast b \) \\
+6. \( a \circ b \) \\
+7. \( a \cdot b \) \\
+8. \( a \bullet b \) \\
+9. \( a \triangle b \) \\
+10. \( a \triangleleft b \) \\
+11. \( a \oplus b \) \\
+12. \( a \otimes b \) \\
+13. \( a^\dagger \) \\
+14. \( a^\ddagger \) \\
+15. \( a \leq b \) \\
+16. \( a \geq b \) \\
+17. \( a \equiv b \) \\
+18. \( a \mid= b \)
+
+\section*{}
+
+19. \( A \subset B \) \\
+20. \( A \subseteq B \) \\
+21. \( A \supset B \) \\
+22. \( a \stackrel{.}{=} b \) \\
+23. \( a \sim b \) \\
+24. \( a \approx b \) \\
+25. \( a \simeq b \) \\
+26. \( a \cong b \) \\
+27. \( a \neq b \) \\
+28. \( A \parallel B \) \\
+29. \( a \in A \) \\
+30. \( a \notin A \) \\
+31. \( \ni b \) \\
+32. \( a \leftarrow b \) \\
+33. \( a \Leftarrow b \) \\
+34. \( a \leftrightarrow b \) \\
+35. \( a \Leftrightarrow b \) \\
+36. \( |N| = \aleph \) \\
+37. \( a' b \) \\
+38. \( \exists b \in B \) \\
+39. \( \forall b \in B \) \\
+40. \( a \to \infty \) \\
+41. \( a^\top b \) \\
+42. \( a \sqrt{} \) \\
+43. \( A \cup B \) \\
+44. \( A \cap B \) \\
+45. \( \cos \theta \) \\
+46. \( \cos \frac{\pi}{3} \) \\
+47. \[
+\left( 
+    \begin{matrix}
+        \Biggl| x_{11} & x_{12} \Biggr| \\
+        \Biggl| x_{21} & x_{22} \Biggr|
+    \end{matrix}
+    \middle| 
+    y 
+    \middle| 
+    z
+\right)
+\]
+
+\end{document}

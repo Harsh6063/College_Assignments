@@ -1,0 +1,35 @@
+\documentclass[10pt]{article} 
+\usepackage{fontspec} 
+\author{Harsh Arora \\{AE-1218}} 
+\title{Sanskrit Lines} 
+
+\newcommand\dn{\catcode`\~=11 
+ \fontspec[Script=Devanagari, 
+ Mapping=velthuis-sanskrit]{Nakula}} 
+
+\begin{document} 
+{\maketitle 
+
+\dn{\vspace{1cm} 
+
+sa.msk.rta bhaa.saa vi"savasya bhaa.saasu praaciinatam bhaa.saa asti |\\
+sa.msk.rta bhaa.saa bhaaratiyadharamadara"sanaadikaanaa.m prasaarikaa asti | \\
+
+atha dik.su vidik.su parik.subhita-\\
+bhramitodaravArininAdabarai.h\\
+udakAdudagAduragAdhipati-\\
+svadupAntama"sAntaru.sAndhamanA.h \\
+
+eva.m vAdini devar.sau \\
+paar"sve pituradhomukhii \\
+liilaakamalapatraa.ni\\
+ga.nayaamaasa paarvatii\\
+
+mahe"svare vaa jagataamadhii"svare\\
+jagannivaase jagadantaraatmani\\
+
+
+
+ } 
+}
+\end{document}

@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+\author{Harsh Arora\\{AE-1218}}
+\date{November 5th 2024}
+\title{Hindi Varnmala}
+
+% Define a new command for Devanagari text
+\newcommand\dn{\catcode`\~=11 \fontspec[Script=Devanagari, Mapping=velthuis-sanskrit]{Nakula}}
+
+\begin{document}
+
+\maketitle
+
+\section*{Vowel Diacritics}
+{\dn 
+    "[a] [aa] [i] [ii] [u] [uu] [.r] [.R] [e] [ai] [o] [au] [a.m] [a:]"
+}
+
+\section*{Consonants }
+{\dn 
+    "[ka] [kha] [ga] [gha] ["na] [ca] [cha] [ja] [jha] [~na] [.ta] [.tha] [.da] [.dha] [.na] [ta] [tha] [da] [dha] [na] [pa] [fa] [ba] [bha] [ma] [ya] [ra] [la] [La] [va] ["sa] [.sa] [sa] [ha]"
+}
+
+\section*{Additional Consonants}
+{\dn 
+    "[.sra] [tra] [j~na]"
+}
+
+
+
+\section*{Numerals}
+{\dn 
+    "० १ २ ३ ४ ५ ६ ७ ८ ९"
+}
+
+\end{document}

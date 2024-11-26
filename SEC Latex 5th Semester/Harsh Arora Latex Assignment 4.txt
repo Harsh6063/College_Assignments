@@ -1,0 +1,78 @@
+\documentclass[twoside,openany]{book}
+\usepackage[a4paper,margin=1in,bindingoffset=0.5in]{geometry} % Binding offset
+\usepackage{hyperref} % Clickable links
+\usepackage{lipsum} % Placeholder text
+\usepackage{multicol} % For two-column layout
+\usepackage{setspace} % For custom line spacing
+
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    \vspace*{1in}
+    {\Huge \textbf{Understanding Magic and Fantasy} \par}
+    \vspace{1in}
+    {\Large Harsh Arora\\AE-1218\\Bsc(Hons) Computer Science \par}
+    \vspace{0.5in}
+    {\large \textit{Exploring the Realms of Imagination} \par}
+    \vfill
+    {\large Published by DreamWorld Press \par}
+\end{titlepage}
+
+% Table of Contents
+\tableofcontents
+\newpage
+
+% Chapter 1
+\chapter{Introduction to Magic and Fantasy}
+\begin{multicols}{2}
+    Magic and fantasy have captivated human imagination for centuries. From ancient mythologies to modern fantasy novels, the concept of magic continues to enthrall readers and audiences alike. Stories involving magical realms allow us to escape reality and immerse ourselves in a world of endless possibilities.\footnote{Fantasy as a genre is often defined by its supernatural elements and imaginative worlds.}
+    \lipsum[1-2]
+\end{multicols}
+\newpage
+
+% Chapter 2
+\chapter{The Role of Myths in Fantasy}
+\begin{multicols}{2}
+    Myths serve as the foundation for many fantasy stories. They provide a rich tapestry of gods, heroes, and legendary creatures that inspire modern narratives. For instance, J.R.R. Tolkien drew heavily from Norse mythology when creating *The Lord of the Rings*.\footnote{Tolkien's works are often regarded as the cornerstone of modern fantasy literature.}
+    \lipsum[3-4]
+\end{multicols}
+\newpage
+
+% Chapter 3
+\chapter{Exploring Iconic Fantasy Worlds}
+\begin{multicols}{2}
+    Fantasy literature often features richly developed worlds, such as J.K. Rowling's Wizarding World or George R.R. Martin's Westeros. These settings immerse readers and add depth to the story, making them feel as though they are part of the narrative.\footnote{The detailed maps and histories of these worlds often make them appear more realistic.}
+    \lipsum[5-6]
+\end{multicols}
+\newpage
+
+% Chapter 4
+\chapter{Magic Systems in Fantasy Stories}
+\begin{multicols}{2}
+    One of the most intriguing aspects of fantasy is its magic systems. These systems are often governed by specific rules, ensuring consistency in how magic functions within the story. Brandon Sanderson, a renowned fantasy author, is famous for creating well-defined magic systems.\footnote{Sanderson's "Three Laws of Magic" are widely recognized among fantasy enthusiasts.}
+    \lipsum[7-8]
+\end{multicols}
+\newpage
+
+% Chapter 5
+\chapter{Cultural Impact of Fantasy}
+\begin{multicols}{2}
+    Fantasy has had a significant cultural impact, from inspiring blockbuster movies to shaping video games and other forms of entertainment. It bridges generations, sparking creativity and imagination across different age groups. Fans engage with these stories through fan art, cosplay, and community discussions.\footnote{Popular franchises like *Harry Potter* and *Game of Thrones* have left a lasting legacy on global culture.}
+    \lipsum[9-10]
+\end{multicols}
+\newpage
+
+% Bibliography
+\chapter*{Bibliography}
+\addcontentsline{toc}{chapter}{Bibliography}
+\begin{itemize}
+    \item Tolkien, J.R.R. *The Lord of the Rings*. HarperCollins.
+    \item Rowling, J.K. *Harry Potter Series*. Bloomsbury.
+    \item Sanderson, Brandon. *Mistborn Series*. Tor Books.
+    \item George R.R. Martin. *A Song of Ice and Fire*. Bantam Spectra.
+    \item Fantasy Worldbuilding Resources: \url{https://www.worldbuilding.org}.
+\end{itemize}
+
+\end{document}

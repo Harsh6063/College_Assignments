@@ -1,0 +1,39 @@
+\documentclass[12pt, openany]{book}
+\usepackage{verse} % for the poem formatting
+
+\title{Poetry}
+\author{Harsh Arora\\AE-1218}
+\date{}
+
+\begin{document}
+	
+	% Title Page
+	\maketitle
+	
+	% Table of Contents Page
+	\tableofcontents
+	
+	% Main Content Page
+	\chapter{A Tranquil Evening}
+	
+	\poemtitle{The Silent Moon}
+	
+	\begin{verse}
+		The moon ascends, a silver glow,\\
+		Its quiet light, a calming show.\\
+		Stars like whispers in the sky,\\
+		Softly twinkling, caught on high.
+		
+		The earth is still, the winds at rest,\\
+		Night’s cool embrace, its gentle test.\\
+		Shadows dance on the silent ground,\\
+		Peaceful moments softly found.
+		
+		In this stillness, hearts may heal,\\
+		As nature's charm begins to reveal.\\
+		For under the moon's eternal gleam,\\
+		Lies the magic of a timeless dream.
+	\end{verse}
+	
+\end{document}
+

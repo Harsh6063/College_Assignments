@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+\begin{document}
+
+\title{Mathematical Equations}
+\author{Harsh Arora\\AE-1218\\Department of Computer Science\\Acharya Narendra Dev College\\University of Delhi\\India}
+\date{September 18, 2024}
+\maketitle
+
+\section*{Equations}
+
+1. $x^{2y}$ \\
+2. $x_2{_y}$ \\[1mm]
+3. $x^{y^2}$ \\
+4. $x^{y}_1$ \\[1mm]
+5. $x^{y_1}$ \\[1mm]
+6. $x = \frac{y}{2}$ \\[1mm]
+7. $x = \frac{y + \frac{x}{2}}{y^2 + 1}$ \\[1mm]
+8. $\frac{x + y}{1 + \frac{y}{x+1}}$ \\[1mm]
+9. $\sqrt{x + 2}$ \\[1mm]
+10. $\sqrt[n]{2}$ \\[1mm]
+11. $x_1, \dots, x_n$ \\
+12. $x_1 + \cdots + x_n$ \\
+13. $\alpha$ \\
+14. $\beta$ \\
+15. $\delta$ \\
+16. $\Delta$ \\
+17. $\epsilon$ \\
+18. $\varepsilon$ \\
+19. $\theta$ \\
+20. $\Theta$ \\
+21. $\vartheta$ \\
+22. $\iota$ \\
+23. $\zeta$ \\
+24. $\gamma$ \\
+25. $\Gamma$ \\
+26. $\pi$ \\
+27. $\Pi$ \\
+28. $\phi$ \\
+29. $\varphi$ \\
+30. $\Phi$ \\
+31. $\varpi$ \\
+32. $\rho$ \\
+33. $\varrho$ \\
+34. $\sigma$ \\
+35. $\Sigma$ \\
+36. $\varsigma$ \\
+37. $\chi$ \\
+38. $\Xi$ \\
+39. $\lambda$ \\
+40. $\Lambda$ \\
+41. $\omega$ \\
+42. $\Omega$ \\
+43. $G^2$ \\
+44. \$50 \\
+45. \#01 \\
+46. $\frac{a}{b}$ \\
+
+\end{document}
