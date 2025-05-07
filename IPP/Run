@@ -1,0 +1,2 @@
+g++ -fopenmp -O2 parallel_test.cpp -o parallel_test
+./parallel_test
