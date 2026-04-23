@@ -1,0 +1,45 @@
+def rail_fence_encrypt(text, key):
+    # Remove spaces to keep the pattern clean
+    text = text.replace(" ", "")
+    
+    # Initialize the matrix with placeholders
+    rail = [[' ' for _ in range(len(text))] for _ in range(key)]
+    
+    direction_down = False
+    row, col = 0, 0
+
+    # Fill the matrix in a zigzag pattern
+    for char in text:
+        rail[row][col] = char
+        col += 1
+        
+        # Reverse direction when hitting top or bottom rail
+        if row == 0 or row == key - 1:
+            direction_down = not direction_down
+        
+        row += 1 if direction_down else -1
+
+    # Print the zigzag pattern for visual confirmation
+    print("\nZigzag Pattern:")
+    for r in rail:
+        print(" ".join(r))
+
+    # Read the matrix row-wise to create the ciphertext
+    result = ""
+    for i in range(key):
+        for j in range(len(text)):
+            if rail[i][j] != ' ':
+                result += rail[i][j]
+    return result
+
+# --- Execution ---
+plaintext = input("Enter plaintext: ")
+try:
+    key = int(input("Enter number of rails: "))
+    if key < 2:
+        print("Key must be at least 2.")
+    else:
+        cipher = rail_fence_encrypt(plaintext, key)
+        print("\nCiphertext:", cipher)
+except ValueError:
+    print("Please enter a valid number for the key.")

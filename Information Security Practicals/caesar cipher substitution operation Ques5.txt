@@ -1,0 +1,16 @@
+def caesar_encrypt(text, shift):
+    result = ""
+    for char in text:
+        if char.isalpha():
+ # Preserve case
+            base = ord('A') if char.isupper() else ord('a')
+            new_char = chr((ord(char) - base + shift) % 26 + base)
+            result += new_char
+        else:
+            result += char
+    return result
+# Input
+plaintext = input("Enter plaintext: ")
+shift = int(input("Enter shift value: "))
+cipher = caesar_encrypt(plaintext, shift)
+print("Ciphertext:", cipher)

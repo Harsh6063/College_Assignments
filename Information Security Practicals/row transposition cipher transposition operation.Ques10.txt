@@ -1,0 +1,54 @@
+import math
+import random
+
+def generate_key(n):
+    key = list(range(1, n+1))
+    random.shuffle(key)
+    return key
+
+def row_transposition_encrypt(text, key):
+    text = text.replace(" ", "")
+    n_cols = len(key)
+    n_rows = math.ceil(len(text) / n_cols)
+    
+    # Fill matrix row-wise
+    matrix = []
+    index = 0
+    for i in range(n_rows):
+        row = []
+        for j in range(n_cols):
+            if index < len(text):
+                row.append(text[index])
+                index += 1
+            else:
+                row.append('X')  # Padding with 'X'
+        matrix.append(row)
+        
+    # Print the matrix for visualization
+    print("\nMatrix:")
+    for r in matrix:
+        print(" ".join(r))
+        
+    # Generate column order based on the key
+    # order stores tuples of (original_column_index, key_value)
+    order = sorted(list(enumerate(key)), key=lambda x: x[1])
+    
+    # Read columns in key order to produce ciphertext
+    cipher = ""
+    for idx, _ in order:
+        for row in matrix:
+            cipher += row[idx]
+            
+    return cipher
+
+# --- Execution ---
+plaintext = input("Enter plaintext: ")
+try:
+    n_cols = int(input("Enter number of columns: "))
+    key = generate_key(n_cols)
+    print("Generated Key:", key)
+
+    cipher = row_transposition_encrypt(plaintext, key)
+    print("\nCiphertext:", cipher)
+except ValueError:
+    print("Please enter a valid number for the columns.")

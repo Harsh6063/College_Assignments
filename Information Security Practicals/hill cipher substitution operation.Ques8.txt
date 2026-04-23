@@ -1,0 +1,58 @@
+def char_to_num(c):
+    return ord(c) - ord('A')
+
+def num_to_char(n):
+    return chr(n + ord('A'))
+
+def prepare_text(text, n):
+    text = text.upper()
+    text = "".join(filter(str.isalpha, text))
+    # Pad with 'X' if the text length isn't a multiple of matrix size n
+    while len(text) % n != 0:
+        text += 'X'
+    return text
+
+def hill_encrypt(text, key, n):
+    text = prepare_text(text, n)
+    result = ""
+    # Process the text in blocks of size n
+    for i in range(0, len(text), n):
+        block = text[i:i+n]
+        nums = [char_to_num(c) for c in block]
+        cipher_nums = []
+        
+        # Matrix multiplication: (Key Matrix) * (Text Vector) mod 26
+        for row in key:
+            value = sum(row[j] * nums[j] for j in range(n)) % 26
+            cipher_nums.append(value)
+            
+        result += "".join(num_to_char(num) for num in cipher_nums)
+    return result
+
+# --- Execution ---
+
+# Input matrix size
+try:
+    n = int(input("Enter size of key matrix (n for n x n): "))
+
+    # Input key matrix
+    print(f"\nEnter the {n}x{n} key matrix row by row")
+    print("Example for n=2:")
+    print("3 3")
+    print("2 5\n")
+
+    key = []
+    for i in range(n):
+        row = list(map(int, input(f"Enter row {i+1}: ").split()))
+        if len(row) != n:
+            print(f"Error: You must enter exactly {n} values")
+            exit()
+        key.append(row)
+
+    # Input plaintext
+    plaintext = input("\nEnter plaintext: ")
+    cipher = hill_encrypt(plaintext, key, n)
+    print("\nCiphertext:", cipher)
+
+except ValueError:
+    print("Error: Please enter valid integers for the matrix.")

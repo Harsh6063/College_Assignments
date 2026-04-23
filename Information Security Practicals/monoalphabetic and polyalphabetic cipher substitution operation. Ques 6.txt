@@ -1,0 +1,50 @@
+import random
+import string
+# ---------------- MONOALPHABETIC ----------------
+def generate_mono_key():
+    alphabet = list(string.ascii_uppercase)
+    shuffled = alphabet[:]
+    random.shuffle(shuffled)
+    return dict(zip(alphabet, shuffled))
+def mono_encrypt(text, key):
+    text = text.upper()
+    result = ""
+    for char in text:
+        if char in key:
+            result += key[char]
+        else:
+            result += char
+    return result
+# ---------------- POLYALPHABETIC (VIGENERE) ----------------
+def vigenere_encrypt(text, key):
+    text = text.upper().replace(" ", "")
+    key = key.upper()
+    result = ""
+    key_index = 0
+    for char in text:
+        if char.isalpha():
+            shift = ord(key[key_index % len(key)]) - ord('A')
+            encrypted = (ord(char) - ord('A') + shift) % 26
+            result += chr(encrypted + ord('A'))
+            key_index += 1
+        else:
+            result += char
+    return result
+# ---------------- MAIN MENU ----------------
+print("1. Monoalphabetic Cipher")
+print("2. Polyalphabetic Cipher (Vigenere)")
+choice = int(input("Enter your choice: "))
+plaintext = input("Enter plaintext: ")
+if choice == 1:
+    key = generate_mono_key()
+    print("\nGenerated Key Mapping:")
+    for k, v in key.items():
+        print(f"{k}->{v}", end=" ")
+        cipher = mono_encrypt(plaintext, key)
+        print("\n\nCiphertext:", cipher)
+elif choice == 2:
+    key = input("Enter key: ")
+    cipher = vigenere_encrypt(plaintext, key)
+    print("Ciphertext:", cipher)
+else:
+    print("Invalid choice!")

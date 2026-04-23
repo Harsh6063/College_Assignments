@@ -1,0 +1,57 @@
+import math
+import random
+
+# Generate random key
+def generate_key(n):
+    key = list(range(n))
+    random.shuffle(key)
+    return key
+
+# First Transposition (Row-wise fill, column read)
+def transposition(text, cols, key):
+    rows = math.ceil(len(text) / cols)
+    # Fill matrix
+    matrix = []
+    index = 0
+    for i in range(rows):
+        row = []
+        for j in range(cols):
+            if index < len(text):
+                row.append(text[index])
+                index += 1
+            else:
+                row.append('X')
+        matrix.append(row)
+    
+    print("\nMatrix View:")
+    for r in matrix:
+        print(" ".join(r))
+        
+    # Read using key order
+    cipher = ""
+    # Sort the indices based on the values in the key
+    for k in sorted(range(len(key)), key=lambda x: key[x]):
+        for r in range(rows):
+            cipher += matrix[r][k]
+    return cipher
+
+# --- Execution ---
+
+plaintext = input("Enter plaintext: ").replace(" ", "").upper()
+try:
+    cols = int(input("Enter number of columns: "))
+
+    # First key and transposition
+    key1 = generate_key(cols)
+    print("Key 1:", key1)
+    step1 = transposition(plaintext, cols, key1)
+    print("\nAfter First Transposition:", step1)
+
+    # Second key and transposition
+    key2 = generate_key(cols)
+    print("\nKey 2:", key2)
+    final_cipher = transposition(step1, cols, key2)
+    print("\nFinal Ciphertext:", final_cipher)
+
+except ValueError:
+    print("Error: Please enter a valid number for the columns.")
